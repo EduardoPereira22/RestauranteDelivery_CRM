@@ -1,26 +1,19 @@
-// const botaocadastro = document.querySelector("#botaocadastro");
-
-// botaocadastro.addEventListener("click", function(e){
-
-// const nome = document.querySelector("#nome");
-
-
-// const nomevalue = nome.value;
-
-// console.log(nomevalue)
-
-
-
-
-// })
-
-
 function clicarBotao () {
-    let nome = document.getElementById('nome')
-    
-    let nome2 = document.getElementById('email')
+    let nome = document.getElementById('nome').value
+    let email = document.getElementById('email').value
+    let celular = document.getElementById('celular').value
+    let cidade = document.getElementById('cidade').value
+    let rua = document.getElementById('rua').value
+    let numero = document.getElementById('numero').value
 
-    nome2.setAttribute('value', 'texto estático')
+    localStorage.setItem('cadastro', JSON.stringify({
+        'nome': nome,
+        'email': email,
+        'celular': celular,
+        'cidade': cidade,
+        'rua': rua,
+        'numero': numero
+    }))
 }
 
 let botaocadastro = document.getElementById('botaocadastro')

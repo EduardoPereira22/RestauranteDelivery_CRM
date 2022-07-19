@@ -93,3 +93,14 @@ td {
     background-color: rgb(241, 241, 241);
     border-radius: 10px;
 }
+
+#botao-pedido {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(149, 222, 149);
+    color: white;
+    float: right;
+    margin-right: 15px;
+}
