@@ -2,9 +2,11 @@ import React from "react";
 import Header from "../organisms/Header";
 import Default from "../templates/Default";
 import Orderlist from "../atoms/OrdersList";
+import Principal from "../molecules/Principal";
 import Avatar from "../atoms/Avatar";
 //import Biouser from "../molecules/Biouser";
 import { useParams } from "react-router-dom";
+import Sidebar from "../molecules/sidebar";
 
 export default function Orders() {
   const { id } = useParams();
@@ -21,13 +23,8 @@ export default function Orders() {
 
   return (
     <Default>
-      <Orderlist
-        id={users.userid}
-        nome={users.username}
-        email={users.email}
-        datacriada={users.created_on}
-        Nbairros={users.aten}
-      />
+      <Principal />
+      <Sidebar />
     </Default>
   );
 }
