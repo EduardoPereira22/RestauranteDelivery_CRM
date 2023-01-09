@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import Header from '../organisms/Header'
+import Header from "../organisms/Header";
+import Footer from "../organisms/Footer";
 
 export default function Default(props) {
   return (
     <div>
-        <Header />
-        {props.children}
+      <Header />
+      {props.children}
+      <Footer />
     </div>
-  )
+  );
 }

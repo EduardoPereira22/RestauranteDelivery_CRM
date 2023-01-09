@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 
 import Home from './components/pages/Home'
-import Orders from './components/pages/Orders'
-
+//import Orders from './components/pages/Orders'
+import AreaAdm from "./components/pages/AreaAdm";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/home.css'
@@ -17,9 +17,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/orders/:id" element={<Orders />} />
-    
+        <Route path="/AreaAdm" element={<AreaAdm />} />
+        <Route path="/AreaAdm/:id" element={<AreaAdm />} />
+        
       </Routes>
     </BrowserRouter>
   );

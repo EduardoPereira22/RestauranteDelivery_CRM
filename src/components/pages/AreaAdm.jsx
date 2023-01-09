@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../organisms/Header";
-import Default from "../templates/Default";
-import Orderlist from "../atoms/OrdersList";
-import Principal from "../molecules/Principal";
-import Avatar from "../atoms/Avatar";
-//import Biouser from "../molecules/Biouser";
-import { useParams } from "react-router-dom";
-import Sidebar from "../molecules/sidebar";
 
-export default function Orders() {
+import Default from "../templates/Default";
+
+import Principal from "../molecules/Principal";
+
+import { useParams } from "react-router-dom";
+//import Sidebar from "../molecules/sidebar";
+
+export default function AreaAdm() {
   const { id } = useParams();
 
   const [users, setUsers] = React.useState([]);
@@ -23,8 +22,13 @@ export default function Orders() {
 
   return (
     <Default>
-      <Principal />
-      <Sidebar />
+      <Principal
+        npedidos={users.npedidos}
+        username={users.username}
+        dinano={users.dinano}
+        dinmensal={users.dinmensal}
+        vip={users.NºclientesVip}
+      />
     </Default>
   );
 }

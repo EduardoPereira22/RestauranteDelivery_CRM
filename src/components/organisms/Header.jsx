@@ -23,8 +23,8 @@ export default function Header() {
           <LinkContainer to="/">
             <Nav.Link>Página inicial</Nav.Link>
           </LinkContainer>
-          <LinkContainer to="/orders">
-            <Nav.Link>Pedidos</Nav.Link>
+          <LinkContainer to="/AreaAdm">
+            <Nav.Link>Area-Adm</Nav.Link>
           </LinkContainer>
         </Nav>
       </Container>
